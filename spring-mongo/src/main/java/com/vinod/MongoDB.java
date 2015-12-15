@@ -26,25 +26,29 @@ public class MongoDB {
 		return db.getCollection("schools").find();
 	}
 
-	public static void insert() throws ParseException {
-		db.getCollection("schools")
-				.insertMany(asList(
-						new Document("address",
-								new Document().append("street", "XYZ, AB ROAD").append("zipcode", "452154")
-										.append("state", "Haryana").append("location", "Chandigarh"))
-												.append("name", "British School").append("school_id", "120320"),
+	public static String insert() throws ParseException {
+		db.getCollection("schools").insertMany(asList(
 				new Document("address",
-						new Document().append("street", "ABC, XY Road").append("zipcode", "42211")
+						new Document().append("street", "Sector 38C, Opposite Canara Bank").append("zipcode", "110026")
+								.append("state", "Haryana").append("location", "Chandigarh"))
+										.append("name", "British School").append("school_id", "1001"),
+				new Document("address",
+						new Document().append("street", "Phase 7B").append("zipcode", "160034")
 								.append("state", "Punjab").append("location", "Mohali")).append("name", "DAV")
-										.append("school_id", "443211"),
+										.append("school_id", "1002"),
 				new Document("address",
-						new Document().append("street", "SSS, Shadow").append("zipcode", "453226")
+						new Document().append("street", "Sector 2A").append("zipcode", "134110")
 								.append("state", "Haryana").append("location", "Panchkula")).append("name", "DPS")
-										.append("school_id", "754323"),
+										.append("school_id", "1003"),
 				new Document("address",
-						new Document().append("street", "1233, Near Gopal").append("zipcode", "645322")
+						new Document().append("street", "Plot #1233, Sector 11").append("zipcode", "150230")
 								.append("state", "Punjab").append("location", "Zirakpur"))
-										.append("name", "Kendra Vidhalya").append("school_id", "653243")));
+										.append("name", "Kendra Vidhalya").append("school_id", "1004"),
+				new Document("address",
+						new Document().append("street", "Sector D, Cantonment Area").append("zipcode", "160101")
+								.append("state", "Punjab").append("location", "Chandigarh"))
+										.append("name", "Army School").append("school_id", "1005")));
+		return "Total Insert: " + db.getCollection("schools").count(new Document());
 	}
 
 	public static DeleteResult delete(String schoolId) {

@@ -26,8 +26,8 @@ public class MongoController {
 	}
 
 	@RequestMapping(method = { RequestMethod.POST })
-	public void insert() throws ParseException {
-		MongoDB.insert();
+	public String insert() throws ParseException {
+		return MongoDB.insert();
 	}
 
 	@RequestMapping(value = { "/{school_id}" }, method = { RequestMethod.DELETE })
