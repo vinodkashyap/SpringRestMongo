@@ -13,12 +13,12 @@ Below are some requirements for this to run:
 * REST client: [POSTMAN] (https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) plugin for Chrome or you can use of your choice :)
 
 See below `REST` hits that will work:
-* **Fetch all schools**: `GET` *http://localhost:8080/spring-mongo*
-* **Insert dummy data**: `POST` *http://localhost:8080/spring-mongo*
-* **Update school**: `PUT` *http://localhost:8080/spring-mongo*. This will only update schools name to `British International`
-* **Fetch a school by its id**: `GET` *http://localhost:8080/spring-mongo/{school_id}*
-* **Delete a school by its id**: `DELETE` *http://localhost:8080/spring-mongo/{school_id}*
-* **Delete all schools**: `DELETE` *http://localhost:8080/spring-mongo*
+* **Fetch all schools**: `GET http://localhost:8080/spring-mongo`
+* **Insert dummy data**: `POST http://localhost:8080/spring-mongo`
+* **Update school**: `PUT http://localhost:8080/spring-mongo`. This will only update schools name to `British International`
+* **Fetch a school by its id**: `GET http://localhost:8080/spring-mongo/{school_id}`
+* **Delete a school by its id**: `DELETE http://localhost:8080/spring-mongo/{school_id}`
+* **Delete all schools**: `DELETE http://localhost:8080/spring-mongo`
 
 ### Technologies Used
 * Java 8
