@@ -35,6 +35,11 @@ public class MongoController {
 		return MongoDB.delete(schoolId);
 	}
 
+	@RequestMapping(method = { RequestMethod.DELETE })
+	public DeleteResult deleteAll() {
+		return MongoDB.deleteAll();
+	}
+
 	@RequestMapping(value = { "/{school_id}" }, method = { RequestMethod.PUT })
 	public UpdateResult update(@PathVariable("school_id") String schoolId) {
 		return MongoDB.update(schoolId);
