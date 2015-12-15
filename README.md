@@ -1,7 +1,7 @@
 # SpringRestMongo
-`Java` project with `Spring`, `REST` and `MongoDB`
+`Java` project with `Spring`, `REST` and `MongoDB` based on `Maven`
 
-### Run
+### How to Run
 It is a `REST` based project and there is no UI for it.
 So you need to test in some `REST` client. 
 Simply deploy application on your local server and access using `REST` client
