@@ -1,5 +1,5 @@
 # SpringRestMongo
-`Java` project with `Spring`, `REST` and `MongoDB` based on `Maven`
+Sample `Java` project with `Spring`, `REST` and `MongoDB` based on `Maven`. It uses default database of `MongoDB` i.e. *`test`*. It will automatically create a *`collection`* (*table* in RDBMS) with name *`schools`*.
 
 ## Technologies Used
 * Java 8
@@ -7,16 +7,17 @@
 * Maven 3
 * MongoDB 
 
+## Requirements
+* `MongoDB` on your system and should be started
+* `Java 8`
+* `REST` client: You can use any `REST` client out there. I am using [POSTMAN] (https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) plugin for Chrome.
+
 ## How to Run
+```
 It is a `REST` based project and there is no UI for it.
 So you need to test in some `REST` client. 
 Simply deploy application on your local server and access using `REST` client
-
-Below are some requirements for this to run:
-
-* `MongoDB` on your system and should be started
-* `Java 8`
-* `REST` client: [POSTMAN] (https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) plugin for Chrome or you can use of your choice :)
+```
 
 See below `REST` hits that will work:
 * **Fetch all schools**: `GET http://localhost:8080/spring-mongo`
