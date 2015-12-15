@@ -1,6 +1,12 @@
 # SpringRestMongo
 `Java` project with `Spring`, `REST` and `MongoDB` based on `Maven`
 
+### Technologies Used
+* Java 8
+* Spring 4
+* Maven 3
+* MongoDB 
+
 ### How to Run
 It is a `REST` based project and there is no UI for it.
 So you need to test in some `REST` client. 
@@ -20,8 +26,4 @@ See below `REST` hits that will work:
 * **Delete a school by its id**: `DELETE http://localhost:8080/spring-mongo/{school_id}`
 * **Delete all schools**: `DELETE http://localhost:8080/spring-mongo`
 
-### Technologies Used
-* Java 8
-* Spring 4
-* Maven 3
-* MongoDB 
+
