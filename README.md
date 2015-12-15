@@ -10,16 +10,17 @@ Sample `Java` project with `Spring`, `REST` and `MongoDB` based on `Maven`. It u
 ## Requirements
 * `MongoDB` on your system and should be started
 * `Java 8`
+* `Maven 3.x`
 * `REST` client: You can use any `REST` client out there. I am using [POSTMAN] (https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) plugin for Chrome.
 
 ## How to Run
 ```
-It is a `REST` based project and there is no UI for it.
-So you need to test in some `REST` client. 
-Simply deploy application on your local server and access using `REST` client
+It is a REST based project and there is no UI for it.
+So you need to test in some REST client. 
+Simply deploy application on your local server and access using REST client
 ```
 
-See below `REST` hits that will work:
+## REST URL hits
 * **Fetch all schools**: `GET http://localhost:8080/spring-mongo`
 * **Insert dummy data**: `POST http://localhost:8080/spring-mongo`
 * **Update school**: `PUT http://localhost:8080/spring-mongo/{school_id}`. This will only update schools name to `British International`
