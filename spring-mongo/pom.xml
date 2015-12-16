@@ -10,6 +10,7 @@
 	<properties>
 		<spring.version>4.2.1.RELEASE</spring.version>
 		<jackson.databind-version>2.6.2</jackson.databind-version>
+		
 	</properties>
 	<dependencies>
 
@@ -58,6 +59,13 @@
 			<artifactId>bson</artifactId>
 			<version>3.0.4</version>
 		</dependency>
+
+		<!-- JavaEE APIs -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -68,6 +76,14 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<warSourceDirectory>WebContent</warSourceDirectory>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
 		</plugins>
